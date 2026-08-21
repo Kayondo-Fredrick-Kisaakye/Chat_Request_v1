@@ -1,0 +1,104 @@
+@charset "UTF-8";
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #2D6A4F;
+    --primary-hover: #1B4332;
+    --bg-surface: #FFFFFF;
+    --bg-body: #5fa786;
+    --text-main: black;
+    --text-muted: #677A6E;
+    --border-color: #D3DDD6;
+    --error-color: #C94A29;
+    --radius-main: 6px;
+    --transition-speed: 0.2s;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-body);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form-group label .forms-1{
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+.form-group input,
+.input-group select,
+.forms-1 input,
+.forms-1 select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-main);
+    font-size: 16px;
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+    background-color: var(--bg-surface);
+    color: var(--text-main);
+}
+.form-group input:focus,
+.form-group select:focus,
+.forms-1 input:focus,
+.forms-1 select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.15);
+}
+.btn {
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: var(--radius-main);
+    cursor: pointer;
+    transition: all var(--transition-speed);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    width: 100%;
+}
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.section-a {
+    border-color: #1B4332;
+    box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.15);
+    padding: 20px;
+    background-color: white;
+    border-radius: var(--radius-main);
+}
+
+.sample {
+    background-color: #2D6A4F;
+    padding: 20px;
+    color: white;
+    align-content: center;
+}
+
+.span-1{
+    text-decoration-line: underline;
+}
+.anchor-1{
+    color: #2D6A4F;
+    text-decoration: none;
+}
+.sup-1{
+    size: 1px;
+}
