@@ -17,7 +17,8 @@ CREATE TABLE premium_requests (
     request_note text not null,
     requested_at timestamptz default current_timestamp,
     CONSTRAINT premium_requests_pkey primary key (id),
-    CONSTRAINT premium_requests_phone_number_key unique (phone_number) CONSTRAINT premium_requests_email_key unique (email)
+    CONSTRAINT premium_requests_phone_number_key unique (phone_number),
+    CONSTRAINT premium_requests_email_key unique (email)
 );
 CREATE TABLE IF NOT EXISTS public.premium_requests (
     id bigserial NOT NULL,
