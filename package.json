@@ -1,0 +1,6 @@
+{
+    "name": "chat_request_v1",
+    "version": "1.0.0",
+    "public": "true",
+    "description": "Just a way to pay for sessions with a some guy who is me."
+}
