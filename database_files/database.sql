@@ -7,7 +7,8 @@ CREATE TABLE freemium_requests (
     request_note text not null,
     requested_at timestamptz default current_timestamp,
     CONSTRAINT freemium_requests_pkey primary key (id),
-    CONSTRAINT freemium_requests_phone_number_key unique (phone_number)
+    CONSTRAINT freemium_requests_phone_number_key unique (phone_number),
+    CONSTRAINT freemium_requests_email_key unique (email)
 );
 CREATE TABLE premium_requests (
     id bigserial primary key,
