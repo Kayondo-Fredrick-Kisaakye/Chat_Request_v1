@@ -10,30 +10,37 @@
 
 <body>
     <section class="section-a">
+        <header class="payment-header">
+            <p class="payment-kicker">SECURE CHECKOUT</p>
+            <h1>Complete your payment</h1>
+            <p>Premium chat request</p>
+        </header>
 
         <form id="payment-form">
 
             <div class="form-group">
-                <label for="cc-name" style="font-size: small;">Name on Card</label>
+                <label for="cc-name" style="font-size: small;"><strong>Name on Card</strong></label>
                 <input type="text" id="cc-name" autocomplete="cc-name" required style="font-size: small;" />
             </div>
 
             <div class="form-group">
-                <label for="cc-number" style="font-size: small;">Card Number</label>
+                <label for="cc-number" style="font-size: small;"><strong>Card Number</strong></label>
                 <input type="text" id="cc-number" inputmode="numeric" autocomplete="cc-number" pattern="[0-9]+"
                     minlength="15" maxlength="19" required style="font-size: small;" />
             </div>
 
-            <div class="form-group">
-                <label for="cc-exp" style="font-size: small;">Expiry Date</label>
-                <input type="text" id="cc-exp" autocomplete="cc-exp" placeholder="MM/YY" required
-                    style="font-size: small;" />
-            </div>
+            <div class="payment-details">
+                <div class="form-group">
+                    <label for="cc-exp" style="font-size: small;"><strong>Expiry Date</strong></label>
+                    <input type="text" id="cc-exp" autocomplete="cc-exp" placeholder="MM/YY" required
+                        style="font-size: small;" />
+                </div>
 
-            <div class="form-group">
-                <label for="cc-csc" style="font-size: small;">Security Code (CVC)</label>
-                <input type="text" id="cc-csc" inputmode="numeric" autocomplete="cc-csc" minlength="3" maxlength="4"
-                    required style="font-size: small;" />
+                <div class="form-group">
+                    <label for="cc-csc" style="font-size: small;"><strong>Security Code (CVC)</strong></label>
+                    <input type="text" id="cc-csc" inputmode="numeric" autocomplete="cc-csc" minlength="3" maxlength="4"
+                        required style="font-size: small;" />
+                </div>
             </div>
 
             <button type="submit" class="btn btn-primary" style="font-size: small;">Pay Now</button>
@@ -42,7 +49,7 @@
 
     <p id="payment-message" role="status" aria-live="polite"></p>
 
-    <footer>
+    <footer class="footer">
         <h6>KAYONDO FREDRICK KISAAKYE|PixelCode</h6>
     </footer>
     <script src="js/premium.js" defer></script>

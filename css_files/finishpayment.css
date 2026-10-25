@@ -10,14 +10,13 @@
 }
 
 :root {
-    --primary-color: #2D6A4F;
-    --primary-hover: #1B4332;
-    --bg-surface: #FFFFFF;
-    --bg-body: #5fa786;
+    --primary-color: #771c19;
+    --primary-hover: #77312f;
+    --bg-surface: #FBF5DF;
+    --bg-body: #771c19;
     --text-main: black;
     --text-muted: #677A6E;
     --border-color: #D3DDD6;
-    --error-color: #C94A29;
     --radius-main: 6px;
     --transition-speed: 0.2s;
 }
@@ -36,6 +35,34 @@ body {
 
 .section-a {
     width: min(100%, 440px);
+    overflow: hidden;
+    border: 1px solid #1B4332;
+    box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.15);
+    background-color: white;
+    border-radius: var(--radius-main);
+}
+
+.payment-header {
+    padding: 20px;
+    color: #FBF5DF;
+    background-color: var(--primary-color);
+}
+
+.payment-header h1 {
+    margin: 6px 0;
+    font-size: 1.35rem;
+    letter-spacing: 0;
+}
+
+.payment-header p:last-child {
+    color: #FBF5DF;
+}
+
+.payment-kicker {
+    color: #FBF5DF;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
 }
 
 .form-group label {
@@ -60,13 +87,15 @@ body {
 
 #payment-form {
     width: 100%;
-    padding: 12px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-main);
-    font-size: 16px;
-    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
-    background-color: var(--bg-surface);
+    padding: 24px;
+    background-color: white;
     color: var(--text-main);
+}
+
+.payment-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
 }
 
 .form-group input:focus,
@@ -75,7 +104,7 @@ body {
 .forms-1 select:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.15);
+    box-shadow: 0 0 0 3px rgba(119, 28, 25, 0.15);
 }
 
 .btn {
@@ -101,36 +130,18 @@ body {
     background-color: var(--primary-hover);
 }
 
-.section-a {
-    border-color: #1B4332;
-    box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.15);
-    padding: 20px;
-    background-color: white;
-    border-radius: var(--radius-main);
-}
-
-.sample {
-    background-color: #2D6A4F;
-    padding: 20px;
-    color: white;
-    align-content: center;
-}
-
-.span-1 {
-    text-decoration-line: underline;
-}
-
-.anchor-1 {
-    color: #2D6A4F;
-    text-decoration: none;
-}
-
-.sup-1 {
-    size: 1px;
-}
-
 #payment-message {
     color: var(--bg-surface);
     margin-top: 12px;
     text-align: center;
+}
+
+.footer {
+    color: var(--bg-surface);
+}
+
+@media (max-width: 420px) {
+    .payment-details {
+        grid-template-columns: 1fr;
+    }
 }
