@@ -10,32 +10,33 @@
 
 <body>
     <section class="section-a">
-        <form class="forms-1">
+        <form class="forms-1" id="freemium-request-form">
 
             <section class="sample">
-                <h2><sup>
-                        <h6> Request a chat with <em>Sr. DYK</em> through</h6>
-                    </sup><span class="span-1">Freemium</span> Request</h2>
+                <p>Request a chat with <em>Sr. DYK</em> through</p>
+                <h2><span class="span-1">Freemium</span> Request</h2>
             </section>
 
             <div class="form-group">
                 <label for="name"><strong>Name:</strong></label>
-                <input type="text" name="name" required placeholder="Belinda Kelin" style="font-size: small;">
+                <input id="name" type="text" name="name" required placeholder="Belinda Kelin" style="font-size: small;">
             </div>
 
             <div class="form-group">
                 <label for="phone_number"><strong>Phone Number:</strong></label>
-                <input type="text" name="phone_number" required placeholder="0750251430" style="font-size: small;">
+                <input id="phone_number" type="tel" name="phone_number" required placeholder="0750251430"
+                    style="font-size: small;">
             </div>
 
             <div class="form-group">
                 <label for="email"><strong>Email:</strong></label>
-                <input type="text" name="email" required placeholder="belindakelin@fake.mail" style="font-size: small;">
+                <input id="email" type="email" name="email" required placeholder="belindakelin@fake.mail"
+                    style="font-size: small;">
             </div>
 
             <div class="form-group">
                 <label for="request_notes"><strong>Request Notes:</strong></label>
-                <input type="text" name="request" required placeholder="Think of a Request Note!"
+                <input id="request_notes" type="text" name="request" required placeholder="Think of a Request Note!"
                     style="font-size: small;">
             </div><br>
 
@@ -50,6 +51,7 @@
     <footer class="footer" style="font-size: small;">
         <h6>KAYONDO FREDRICK KISAAKYE|PixelCode</h6>
     </footer>
+    <script src="js/freemium.js" defer></script>
 </body>
 
 </html>

@@ -34,7 +34,11 @@ body {
     padding: 20px;
 }
 
-.form-group label .forms-1 {
+.section-a {
+    width: min(100%, 440px);
+}
+
+.form-group label {
     font-weight: 600;
     margin-bottom: 5px;
     display: block;
@@ -123,4 +127,10 @@ body {
 
 .sup-1 {
     size: 1px;
+}
+
+#payment-message {
+    color: var(--bg-surface);
+    margin-top: 12px;
+    text-align: center;
 }
