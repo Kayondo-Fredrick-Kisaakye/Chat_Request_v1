@@ -54,6 +54,17 @@ body {
     color: var(--text-main);
 }
 
+#payment-form {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-main);
+    font-size: 16px;
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+    background-color: var(--bg-surface);
+    color: var(--text-main);
+}
+
 .form-group input:focus,
 .form-group select:focus,
 .forms-1 input:focus,
